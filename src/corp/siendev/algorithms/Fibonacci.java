@@ -24,7 +24,7 @@ public class Fibonacci
      *
      * @return long
      */
-    public long fibonacciRecursive(int fibo)
+    public double fibonacciRecursive(int fibo)
     {
         this.checkParam(fibo);
 
