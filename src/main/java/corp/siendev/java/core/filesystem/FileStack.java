@@ -1,4 +1,4 @@
-package corp.siendev.filesystem;
+package corp.siendev.java.core.filesystem;
 
 import java.io.File;
 import java.io.FileNotFoundException;
