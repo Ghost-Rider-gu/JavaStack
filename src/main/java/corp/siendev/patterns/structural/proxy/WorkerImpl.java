@@ -1,4 +1,4 @@
-package corp.siendev.patterns.proxy;
+package corp.siendev.patterns.structural.proxy;
 
 import java.io.Serializable;
 import java.util.Random;

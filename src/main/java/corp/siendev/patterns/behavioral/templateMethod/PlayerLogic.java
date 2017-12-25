@@ -1,9 +1,9 @@
-package corp.siendev.patterns.templateMethod;
+package corp.siendev.patterns.behavioral.templateMethod;
 
 /**
  *
  */
-public class EnemyLogic extends BasicLogicCharacter
+public class PlayerLogic extends BasicLogicCharacter
 {
     @Override
     protected void createCharacter(TypeGameCharacter typeCharacter)

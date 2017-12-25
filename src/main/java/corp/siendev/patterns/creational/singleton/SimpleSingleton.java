@@ -1,4 +1,4 @@
-package corp.siendev.patterns.singleton;
+package corp.siendev.patterns.creational.singleton;
 
 /**
  * Simple singleton pattern

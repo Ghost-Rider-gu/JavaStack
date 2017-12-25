@@ -1,4 +1,4 @@
-package corp.siendev.patterns.observer;
+package corp.siendev.patterns.behavioral.observer;
 
 /**
  * Simple interface for future Observers

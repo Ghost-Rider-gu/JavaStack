@@ -1,4 +1,4 @@
-package corp.siendev.patterns.templateMethod;
+package corp.siendev.patterns.behavioral.templateMethod;
 
 /**
  *

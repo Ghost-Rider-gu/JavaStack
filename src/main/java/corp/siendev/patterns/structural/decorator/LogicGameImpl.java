@@ -1,4 +1,4 @@
-package corp.siendev.patterns.decorator;
+package corp.siendev.patterns.structural.decorator;
 
 /**
  * Simple implementation for logic game interface

@@ -1,4 +1,4 @@
-package corp.siendev.patterns.strategy;
+package corp.siendev.patterns.behavioral.strategy;
 
 /**
  *

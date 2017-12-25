@@ -1,4 +1,4 @@
-package corp.siendev.patterns.proxy;
+package corp.siendev.patterns.structural.proxy;
 
 /**
  * Simple Proxy for worker
