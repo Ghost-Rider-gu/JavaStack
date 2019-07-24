@@ -14,6 +14,7 @@ package corp.siendev.java.core.number;
 
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
+import java.text.NumberFormat;
 import java.util.Locale;
 
 public class NumberStuff {
@@ -28,5 +29,17 @@ public class NumberStuff {
             format = new DecimalFormat(pattern);
             return format.format(number);
         }
+    }
+
+    public void numberFormatting(double number) {
+        String us = NumberFormat.getCurrencyInstance(Locale.US).format(number);
+        String china = NumberFormat.getCurrencyInstance(Locale.CHINA).format(number);
+        String france = NumberFormat.getCurrencyInstance(Locale.FRANCE).format(number);
+        String india = NumberFormat.getCurrencyInstance(new Locale("en", "in")).format(number);
+
+        System.out.println("US: " + us);
+        System.out.println("India: " + india);
+        System.out.println("China: " + china);
+        System.out.println("France: " + france);
     }
 }
