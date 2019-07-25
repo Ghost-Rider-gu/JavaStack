@@ -12,6 +12,7 @@
 
 package corp.siendev.java.core.number;
 
+import java.math.BigInteger;
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
 import java.text.NumberFormat;
@@ -41,5 +42,14 @@ public class NumberStuff {
         System.out.println("India: " + india);
         System.out.println("China: " + china);
         System.out.println("France: " + france);
+    }
+
+    public void bigNumbers(String firstNumber, String secondNumber) {
+        BigInteger one = new BigInteger(firstNumber);
+        BigInteger two = new BigInteger(secondNumber);
+
+        System.out.println(one.add(two));
+        System.out.println(one.multiply(two));
+        System.out.println(one.divide(two));
     }
 }
