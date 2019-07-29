@@ -12,6 +12,7 @@
 
 package corp.siendev.java.core.number;
 
+import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
@@ -51,5 +52,24 @@ public class NumberStuff {
         System.out.println(one.add(two));
         System.out.println(one.multiply(two));
         System.out.println(one.divide(two));
+    }
+
+    public boolean isOdd(int number) {
+        return number % 2 != 0;
+    }
+
+    public BigDecimal accountantOperation(String firstNumber, String secondNumber, String operation) {
+        switch (operation) {
+            case "-":
+                return new BigDecimal(firstNumber).subtract(new BigDecimal(secondNumber));
+            case "+":
+                return new BigDecimal(firstNumber).add(new BigDecimal(secondNumber));
+            case "/":
+                return new BigDecimal(firstNumber).divide(new BigDecimal(secondNumber));
+            case "*":
+                return new BigDecimal(firstNumber).multiply(new BigDecimal(secondNumber));
+            default:
+                return new BigDecimal("0.0");
+        }
     }
 }
