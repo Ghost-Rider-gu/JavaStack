@@ -24,4 +24,24 @@ public class StringWork {
         }
         return tokens;
     }
+
+    public int repeatedString(String sentence, int number, String sContains) {
+        if (sentence.length() == 1 && sContains.contains(sContains)) {
+            return number;
+        }
+
+        StringBuilder result = new StringBuilder(sentence);
+        while(result.length() <= number) {
+            result.append(sentence);
+        }
+        result.setLength(number);
+
+        return (int)result.toString().codePoints()
+                .filter(i -> i == sContains.codePointAt(0))
+                .count();
+    }
+
+    public long repeatedString(String sentence, long number) {
+        return 0L;
+    }
 }
